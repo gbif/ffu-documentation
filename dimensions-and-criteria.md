@@ -1,7 +1,10 @@
-This page lists dimensions and criterion that could be eventually reused to create:
-* Data Quality profiles to assess the fitness for use of biodiversity records
-* Create validation report for a dataset
-* Create custom validations report for a dataset when more domain knowledge can be provided.
+# Introduction
+
+This page lists dimensions and criteria that could eventually be (re)used to create:
+
+* Generic validation reports for biodiversity datasets
+* Customzied validation reports for biodiversity datasets when more domain knowledge is known
+* Data quality profiles to assess the fitness for use of biodiversity data
 
 # Dimensions
 
