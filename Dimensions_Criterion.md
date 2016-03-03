@@ -18,9 +18,10 @@ Completeness defines if a value is provided or not. A value is considered provid
 Uniqueness defines if a value is used only once inside a predefined scope.
 This dimension normally implies "Value completion". Eventually, this dimension could be expended to an entire record to flag duplicated records.
 
-| Information Element  | Comments |
-| ------------- | ------------- |
-| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) |   |
+| Information Element  | Context | Comments |
+| ------------- | ------------- |------------- |
+| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) | Occurrence  |   |
+| [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | Taxon  |   |
 
 ### Referential integrity
 
