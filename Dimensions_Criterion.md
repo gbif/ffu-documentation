@@ -28,6 +28,10 @@ This dimension normally implies "Value completion". Eventually, this dimension c
 
 ### Referential integrity
 
+| Information Element  | Reference | Comments |
+| ------------- | ------------- |------------- |
+| [parentNameUsageID](http://rs.tdwg.org/dwc/terms/parentNameUsageID) | [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon)  |
+
 ### Controlled vocabulary
 Controlled vocabulary defines if a value is present in a list of predefined acceptable values. The options to handle empty/missing values and case-sensitivity is up to the implementation.
  
