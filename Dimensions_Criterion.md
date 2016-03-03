@@ -1,4 +1,7 @@
-This page lists dimensions and criterion that could be eventually reused in Data Quality profiles to assess the fitness for use of biodiversity records. The same dimensions and criterion can also be used to simply validate a dataset or a set of records when more domain knowledge can be provided.
+This page lists dimensions and criterion that could be eventually reused to create:
+* Data Quality profiles to assess the fitness for use of biodiversity records
+* Create validation report for a dataset
+* Create custom validations report for a dataset when more domain knowledge can be provided.
 
 # Dimensions
 ## Completeness
@@ -20,8 +23,8 @@ This dimension normally implies "Value completion". Eventually, this dimension c
 
 | Information Element  | Context | Comments |
 | ------------- | ------------- |------------- |
-| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) | Occurrence  |   |
-| [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | Taxon  |   |
+| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence)  |   |
+| [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon)  |   |
 
 ### Referential integrity
 
