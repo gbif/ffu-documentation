@@ -4,7 +4,9 @@ This page lists dimensions and criterion that could be eventually reused to crea
 * Create custom validations report for a dataset when more domain knowledge can be provided.
 
 # Dimensions
-## Completeness
+
+## 1. Completeness
+
 ### Value completion
 Completeness defines if a value is provided or not. A value is considered provided if:
 * It is not empty (contains at least one printable character)
@@ -15,7 +17,7 @@ Completeness defines if a value is provided or not. A value is considered provid
 | [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) |   |
 | [eventDate](http://rs.tdwg.org/dwc/terms/eventDate) or [year](http://rs.tdwg.org/dwc/terms/year),[month](http://rs.tdwg.org/dwc/terms/month), [day](http://rs.tdwg.org/dwc/terms/day) |   |
 
-## Integrity
+## 2. Integrity
 
 ### Uniqueness
 Uniqueness defines if a value is used only once inside a predefined scope.
@@ -65,13 +67,16 @@ Defines that the value of a minimum IE must be smaller (or equals) to the value 
 |<ul><li>[minimumDepthInMeters](http://rs.tdwg.org/dwc/terms/minimumDepthInMeters)</li><li>[maximumDepthInMeters](http://rs.tdwg.org/dwc/terms/maximumDepthInMeters)</li></ul> |  |
 |<ul><li>[minimumElevationInMeters](http://rs.tdwg.org/dwc/terms/minimumElevationInMeters)</li><li>[maximumElevationInMeters](http://rs.tdwg.org/dwc/terms/maximumElevationInMeters)</li></ul> |  |
 
-## Likeliness
 Defines the bounds within which the values should be considered "possible".
+## 3. Likeliness
+
 
 ### Coordinates decimal part distribution
 Check the distribution of the decimal part of decimalLatitude, decimalLongitude to identify suspicious datasets where the range  0.0-0.6 is over represented. This can be a symptom of incorrect conversion from a degree, minute, seconds coordinates.
 
-## Consistency
+
+## 4. Consistency
+
 Agreement/accordance with characteristics previously shown or stated. Absence of contradiction.
 
 ### Mismatch
@@ -80,7 +85,8 @@ Agreement/accordance with characteristics previously shown or stated. Absence of
 | <ul><li>[eventDate](http://rs.tdwg.org/dwc/terms/eventDate)</li><li>[year](http://rs.tdwg.org/dwc/terms/year)</li><li>[month](http://rs.tdwg.org/dwc/terms/month)</li><li>[day](http://rs.tdwg.org/dwc/terms/day)</li></ul> |   |
 | <ul><li>[countryCode](http://rs.tdwg.org/dwc/terms/countryCode)</li><li>[decimalLongitude](http://rs.tdwg.org/dwc/terms/decimalLongitude)</li><li>[decimalLatitude](http://rs.tdwg.org/dwc/terms/decimalLatitude)</li></ul> |   |
 
-## Resolution/Precision
+## 5. Resolution/precision
+
 The precision dimension is not easy to define and can be easily confused with the more formal definition of [precision](https://en.wikipedia.org/wiki/Accuracy_and_precision) - how close repeated measured values are to each other. While this description is correct to express GPS related precision, it is not totally clear when it comes to express the number of digits used to store or export the data. This is the reason we should borrow the word used in the GIS world "resolution" with a simple definition : level or quantity of details provided.
 
 ### Geographical Resolution
@@ -99,17 +105,20 @@ The precision dimension is not easy to define and can be easily confused with th
 | ------------- | ------------- |
 | <ul><li>[kingdom](http://rs.tdwg.org/dwc/terms/index.htm#kingdom)</li><li>[phylum](http://rs.tdwg.org/dwc/terms/phylum)</li><li>[class](http://rs.tdwg.org/dwc/terms/class)</li><li>[order](http://rs.tdwg.org/dwc/terms/order)</li><li>[family](http://rs.tdwg.org/dwc/terms/family)</li><li>[genus](http://rs.tdwg.org/dwc/terms/genus)</li><li>[subgenus](http://rs.tdwg.org/dwc/terms/subgenus)</li></ul> | Taxon classification, number of ranks provided  |
 
-## Interpretability
+## 6. Interpretability
+
 
 # DQ Criteria
 Criteria are used to evaluate/measure a statement to determine if a record is fit for use or to simply check a known fact (e.g. extracted from the metadata) against the related records.
 
-## Dimension based
 All dimensions must be used within a DQ Criterion in order to make it possible to check its fitness for use or its validity.
+## 1. Dimension based
+
 
 ### Controlled vocabulary
 Built on top of a "Controlled vocabulary dimension" the Controlled vocabulary Criterion is used to provided a specific set of accepted values for a specific information element. 
 
-## Range
 Can be used to limit coordinates within a bounding box or dates within a specific interval.
+
+## 2. Range
 
