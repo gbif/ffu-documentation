@@ -113,8 +113,8 @@ The precision dimension is not easy to define and can be easily confused with th
 
 ## 6. Interpretability
 
+# Criteria (for data quality)
 
-# DQ Criteria
 Criteria are used to evaluate/measure a statement to determine if a record is fit for use or to simply check a known fact (e.g. extracted from the metadata) against the related records.
 
 ## 1. Dimension based
