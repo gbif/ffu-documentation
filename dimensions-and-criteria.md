@@ -83,6 +83,12 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 Checks the distribution of the decimal part of `decimalLatitude`, `decimalLongitude` to identify suspicious datasets where the range `0.0-0.6` is overrepresented. This can be a symptom of incorrect conversion from a DMS coordinates.
 
+### Suspicious Coordinates 
+
+Checks the `decimalLatitude`, `decimalLongitude` to ensure they do not match exactly one of the following values:
+ * 0,0
+ * The centroid of the country represented by `country` or `countryCode`.
+
 ## 4. Consistency
 
 Agreement/accordance with characteristics previously shown or stated. Absence of contradiction.
