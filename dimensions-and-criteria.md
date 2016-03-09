@@ -10,7 +10,7 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ## 1. Completeness
 
-### Value completion
+### 1.1 Value completion
 
 *Value completion* defines if a value is provided or not. A value is considered provided if:
 
@@ -24,7 +24,7 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ## 2. Integrity
 
-### Uniqueness
+### 2.1 Uniqueness
 
 *Uniqueness* defines if a value is used only once in a predefined scope. It normally implies *Value completion*. This dimension could be expended to an entire record to flag duplicated records.
 
@@ -33,13 +33,13 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 | [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) |  |
 | [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) |  |
 
-### Referential integrity
+### 2.2 Referential integrity
 
 | Information element | Reference | Comments |
 | ------------- | ------------- |------------- |
 | [parentNameUsageID](http://rs.tdwg.org/dwc/terms/parentNameUsageID) | [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) |
 
-### Controlled vocabulary
+### 2.3 Controlled vocabulary
 
 *Controlled vocabulary* defines if a value is present in a list of predefined acceptable values. The options to handle empty/missing values and case-sensitivity is up to the implementation.
  
@@ -47,7 +47,19 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 | ------------- | ------------- |
 | [basisOfRecord](http://rs.tdwg.org/dwc/terms/basisOfRecord) |  |
 
-### Data type
+
+### 2.4 Minimum/maximum
+
+*Minimum/maximum* defines that the value of a minimum IE must be smaller or equal to the value of a maximum IE.
+
+| Information element | Comments |
+| ------------- | ------------- |
+| [minimumDepthInMeters](http://rs.tdwg.org/dwc/terms/minimumDepthInMeters), [maximumDepthInMeters](http://rs.tdwg.org/dwc/terms/maximumDepthInMeters) |  |
+| [minimumElevationInMeters](http://rs.tdwg.org/dwc/terms/minimumElevationInMeters), [maximumElevationInMeters](http://rs.tdwg.org/dwc/terms/maximumElevationInMeters) |  |
+
+## 3. Conformity
+
+### 3.1 Data type
 
 | Information element | Comments |
 | ------------- | ------------- |
@@ -66,41 +78,32 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ?
 
-### Minimum/maximum
-
-*Minimum/maximum* defines that the value of a minimum IE must be smaller or equal to the value of a maximum IE.
-
-| Information element | Comments |
-| ------------- | ------------- |
-| [minimumDepthInMeters](http://rs.tdwg.org/dwc/terms/minimumDepthInMeters), [maximumDepthInMeters](http://rs.tdwg.org/dwc/terms/maximumDepthInMeters) |  |
-| [minimumElevationInMeters](http://rs.tdwg.org/dwc/terms/minimumElevationInMeters), [maximumElevationInMeters](http://rs.tdwg.org/dwc/terms/maximumElevationInMeters) |  |
-
-## 3. Likeliness
+## 4. Likeliness
 
 *Likeliness** defines the bounds within which the values should be considered "possible".
 
-### Coordinates decimal part distribution
+### 4.1 Coordinates decimal part distribution
 
 Checks the distribution of the decimal part of `decimalLatitude`, `decimalLongitude` to identify suspicious datasets where the range `0.0-0.6` is overrepresented. This can be a symptom of incorrect conversion from a DMS coordinates.
 
-### Suspicious Coordinates 
+### 4.2 Suspicious Coordinates 
 
 Checks the `decimalLatitude`, `decimalLongitude` to ensure they do not match exactly one of the following values:
  * 0,0
  * The centroid of the country represented by `country` or `countryCode`.
 
-## 4. Consistency
+## 5. Consistency
 
 Agreement/accordance with characteristics previously shown or stated. Absence of contradiction.
 
-### Mismatch
+### 5.1 Mismatch
 
 | Information element | Comments |
 | ------------- | ------------- |
 | [eventDate](http://rs.tdwg.org/dwc/terms/eventDate), [year](http://rs.tdwg.org/dwc/terms/year), [month](http://rs.tdwg.org/dwc/terms/month), [day](http://rs.tdwg.org/dwc/terms/day) |  |
 | [countryCode](http://rs.tdwg.org/dwc/terms/countryCode), [decimalLongitude](http://rs.tdwg.org/dwc/terms/decimalLongitude), [decimalLatitude](http://rs.tdwg.org/dwc/terms/decimalLatitude) |  |
 
-## 5. Resolution/precision
+## 6. Resolution/precision
 
 The precision dimension is not easy to define and can be easily confused with the more formal definition of [precision](https://en.wikipedia.org/wiki/Accuracy_and_precision): how close repeated measured values are to each other. While this description is correct to express GPS related precision, it is not totally clear when it comes to express the number of digits used to store or export the data. This is the reason we should borrow the word used in the GIS world "resolution" with a simple definition: level or quantity of details provided.
 
@@ -120,7 +123,6 @@ The precision dimension is not easy to define and can be easily confused with th
 | ------------- | ------------- |
 | [kingdom](http://rs.tdwg.org/dwc/terms/index.htm#kingdom), [phylum](http://rs.tdwg.org/dwc/terms/phylum), [class](http://rs.tdwg.org/dwc/terms/class), [order](http://rs.tdwg.org/dwc/terms/order), [family](http://rs.tdwg.org/dwc/terms/family), [genus](http://rs.tdwg.org/dwc/terms/genus), [subgenus](http://rs.tdwg.org/dwc/terms/subgenus) | Taxon classification, number of ranks provided |
 
-## 6. Interpretability
 
 # Criteria (for data quality)
 
