@@ -1,9 +1,9 @@
 # Glossary
- * Criteria: can be evaluated and have a result compliant or not compliant
+ * Information Element (IE): value to be measured or evaluated
+ * Dimension: what to measure in the IE
+ * Criteria: evaluate the dimension or the value directly of the IE and generate a result compliant or not compliant
  * Enhancement: new value proposed after a not compliant criteria evaluation
- * Dimension:
- * Information Element:
- 
+
 # Scope
 
 This document focus on Criteria and not Enhancements.
