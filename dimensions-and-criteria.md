@@ -89,15 +89,20 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 *Likeliness** defines the bounds within which the values should be considered "possible".
 
-### 4.1 Coordinates decimal part distribution
-
-Checks the distribution of the decimal part of `decimalLatitude`, `decimalLongitude` to identify suspicious datasets where the range `0.0-0.6` is overrepresented. This can be a symptom of incorrect conversion from a DMS coordinates.
-
-### 4.2 Suspicious Coordinates 
+### 4.1 Suspicious Coordinates 
 
 Checks the `decimalLatitude`, `decimalLongitude` to ensure they do not match exactly one of the following values:
  * 0,0
  * The centroid of the country represented by `country` or `countryCode`.
+ 
+### 4.2 Suspicious Dates
+* Check that `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate`
+* Check that `eventDate` and `dateIdentified` is after 1600
+* Check that `dcterms:modified` is after 1970
+
+### 4.3 Coordinates decimal part distribution
+
+Checks the distribution of the decimal part of `decimalLatitude`, `decimalLongitude` to identify suspicious datasets where the range `0.0-0.6` is overrepresented. This can be a symptom of incorrect conversion from a DMS coordinates.
 
 ## 5. Consistency
 
