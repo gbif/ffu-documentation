@@ -151,3 +151,7 @@ Built on top of a *Controlled vocabulary dimension* the Controlled vocabulary cr
 ## 2. Range
 
 Can be used to limit coordinates within a bounding box or dates within a specific interval.
+
+# Contributors
+* Lee Belbin
+* Peter Desmet
