@@ -1,9 +1,16 @@
-# Introduction
+# Glossary
+ * Criteria: can be evaluated and have a result compliant or not compliant
+ * Enhancement: new value proposed after a not compliant criteria evaluation
+ * Dimension:
+ * Information Element:
+ 
+# Scope
+
+This document focus on Criteria and not Enhancements.
 
 This page lists dimensions and criteria that could eventually be (re)used to create:
-
 * Generic validation reports for biodiversity datasets
-* Customzied validation reports for biodiversity datasets when more domain knowledge is known
+* Customized validation reports for biodiversity datasets when more domain knowledge is known
 * Data quality profiles to assess the fitness for use of biodiversity data
 
 # Dimensions
