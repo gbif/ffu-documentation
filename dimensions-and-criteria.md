@@ -68,18 +68,16 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ### 3.1 Data type
 
-| Terms | Comments |
-| ------------- | ------------- |
-| [eventDate](http://rs.tdwg.org/dwc/terms/eventDate) | date, including partial date and date range |
-| [year](http://rs.tdwg.org/dwc/terms/year) | integer |
-| [month](http://rs.tdwg.org/dwc/terms/month) | integer  |
-| [day](http://rs.tdwg.org/dwc/terms/day) | integer |
-| [decimalLatitude](http://rs.tdwg.org/dwc/terms/decimalLatitude) | float/double |
-| [decimalLongitude](http://rs.tdwg.org/dwc/terms/decimalLongitude) | float/double |
-| [minimumDepthInMeters](http://rs.tdwg.org/dwc/terms/minimumDepthInMeters) | numeric |
-| [maximumDepthInMeters](http://rs.tdwg.org/dwc/terms/maximumDepthInMeters) | numeric |
-| [minimumElevationInMeters](http://rs.tdwg.org/dwc/terms/minimumElevationInMeters) | numeric |
-| [maximumElevationInMeters](http://rs.tdwg.org/dwc/terms/maximumElevationInMeters) | numeric |
+| ID | Terms | Comments |
+| ---|---------- | ------------- |
+| CONFORMITY_DATATYPE_EVENT_DATE | `eventDate` | date, including partial date and date range |
+| CONFORMITY_DATATYPE_YEAR | `year` | integer |
+| CONFORMITY_DATATYPE_MONTH | `month` | integer  |
+| CONFORMITY_DATATYPE_DAY | `day` | integer |
+| CONFORMITY_DATATYPE_DECIMAL_LATITUDE | `decimalLatitude` | float/double |
+| CONFORMITY_DATATYPE_DECIMAL_LONGITUDE | `decimalLongitude` | float/double |
+| CONFORMITY_DATATYPE_DEPTH | `minimumDepthInMeters`, `maximumDepthInMeters` | numeric |
+| CONFORMITY_DATATYPE_ELEVATION | `minimumElevationInMeters`, `maximumElevationInMeters` | numeric |
 
 ### Data format
 
