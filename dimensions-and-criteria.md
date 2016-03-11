@@ -24,7 +24,7 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 * It is not empty (contains at least one printable character)
 * It is not equal to one of the predefined placeholders (e.g. `NULL`, `N/A`)
 
-| Information element | Comments |
+| Terms | Comments |
 | ------------- | ------------- |
 | [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) |  |
 | [eventDate](http://rs.tdwg.org/dwc/terms/eventDate) or [year](http://rs.tdwg.org/dwc/terms/year),[month](http://rs.tdwg.org/dwc/terms/month), [day](http://rs.tdwg.org/dwc/terms/day) |  |
@@ -35,14 +35,14 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 *Uniqueness* defines if a value is used only once in a predefined scope. It normally implies *Value completion*. This dimension could be expended to an entire record to flag duplicated records.
 
-| Information element | Context | Comments |
+| Terms | Context | Scope |
 | ------------- | ------------- |------------- |
-| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) |  |
-| [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) |  |
+| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
+| [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
 
 ### 2.2 Referential integrity
 
-| Information element | Reference | Comments |
+| Terms | Reference | Comments |
 | ------------- | ------------- |------------- |
 | [parentNameUsageID](http://rs.tdwg.org/dwc/terms/parentNameUsageID) | [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) |
 
@@ -50,25 +50,25 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 *Controlled vocabulary* defines if a value is present in a list of predefined acceptable values. The options to handle empty/missing values and case-sensitivity is up to the implementation.
  
-| Information element | Comments |
+| Terms | Comments |
 | ------------- | ------------- |
 | [basisOfRecord](http://rs.tdwg.org/dwc/terms/basisOfRecord) |  |
 
 
 ### 2.4 Minimum/maximum
 
-*Minimum/maximum* defines that the value of a minimum IE must be smaller or equal to the value of a maximum IE.
+*Minimum/maximum* defines that the value of a minimum term must be smaller or equal to the value of a maximum term.
 
-| Information element | Comments |
+| Terms | Comments |
 | ------------- | ------------- |
-| [minimumDepthInMeters](http://rs.tdwg.org/dwc/terms/minimumDepthInMeters), [maximumDepthInMeters](http://rs.tdwg.org/dwc/terms/maximumDepthInMeters) |  |
-| [minimumElevationInMeters](http://rs.tdwg.org/dwc/terms/minimumElevationInMeters), [maximumElevationInMeters](http://rs.tdwg.org/dwc/terms/maximumElevationInMeters) |  |
+| `minimumDepthInMeters`, `maximumDepthInMeters` |  |
+| `minimumElevationInMeters`, `maximumElevationInMeters` |  |
 
 ## 3. Conformity
 
 ### 3.1 Data type
 
-| Information element | Comments |
+| Terms | Comments |
 | ------------- | ------------- |
 | [eventDate](http://rs.tdwg.org/dwc/terms/eventDate) | date, including partial date and date range |
 | [year](http://rs.tdwg.org/dwc/terms/year) | integer |
@@ -110,7 +110,7 @@ Agreement/accordance with characteristics previously shown or stated. Absence of
 
 ### 5.1 Mismatch
 
-| Information element | Comments |
+| Terms | Comments |
 | ------------- | ------------- |
 | [eventDate](http://rs.tdwg.org/dwc/terms/eventDate), [year](http://rs.tdwg.org/dwc/terms/year), [month](http://rs.tdwg.org/dwc/terms/month), [day](http://rs.tdwg.org/dwc/terms/day) |  |
 | [countryCode](http://rs.tdwg.org/dwc/terms/countryCode), [decimalLongitude](http://rs.tdwg.org/dwc/terms/decimalLongitude), [decimalLatitude](http://rs.tdwg.org/dwc/terms/decimalLatitude) |  |
@@ -121,7 +121,7 @@ The precision dimension is not easy to define and can be easily confused with th
 
 ### Geographical resolution
 
-| Information element | Comments |
+| Terms | Comments |
 | ------------- | ------------- |
 | [dataGeneralizations](http://rs.tdwg.org/dwc/terms/dataGeneralizations)  |   |
 | [coordinateUncertaintyInMeters](http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters)  | Radius in meter |
@@ -131,7 +131,7 @@ The precision dimension is not easy to define and can be easily confused with th
 
 ### Taxonomic resolution
 
-| Information element | Comments |
+| Terms | Comments |
 | ------------- | ------------- |
 | [kingdom](http://rs.tdwg.org/dwc/terms/index.htm#kingdom), [phylum](http://rs.tdwg.org/dwc/terms/phylum), [class](http://rs.tdwg.org/dwc/terms/class), [order](http://rs.tdwg.org/dwc/terms/order), [family](http://rs.tdwg.org/dwc/terms/family), [genus](http://rs.tdwg.org/dwc/terms/genus), [subgenus](http://rs.tdwg.org/dwc/terms/subgenus) | Taxon classification, number of ranks provided |
 
