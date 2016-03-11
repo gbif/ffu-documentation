@@ -37,14 +37,14 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 | Terms | Context | Scope |
 | ------------- | ------------- |------------- |
-| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
-| [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
+| `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) dataset |
+| `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) dataset |
 
 ### 2.2 Referential integrity
 
-| Terms | Reference | Comments |
+| Terms | Reference | Scope |
 | ------------- | ------------- |------------- |
-| [parentNameUsageID](http://rs.tdwg.org/dwc/terms/parentNameUsageID) | [taxonID](http://rs.tdwg.org/dwc/terms/taxonID) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) |
+| `parentNameUsageID` | `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) dataset |
 
 ### 2.3 Controlled vocabulary
 
