@@ -91,15 +91,17 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ### 4.1 Suspicious Coordinates 
 
-| Information element | Comments |
+| Terms | Check |
 | ------------- | ------------- |
 | `decimalLatitude`, `decimalLongitude` | Do not exactly match 0,0 |
 | `decimalLatitude`, `decimalLongitude`, `countryCode` | Do not exactly match the centroid of the country |
  
 ### 4.2 Suspicious Dates
-* Check that `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate`
-* Check that `eventDate` and `dateIdentified` is after 1600
-* Check that `dcterms:modified` is after 1970
+| Terms | Check |
+| ------------- | ------------- |
+| `eventDate` or `year`,`month`,`day`,`dateIdentified`, `dcterms:modified`, `georeferencedDate` | `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate` |
+| `eventDate`, `dateIdentified` | Are after 1600 |
+| `dcterms:modified` | Is after 1970 |
 
 ### 4.3 Coordinates decimal part distribution
 
