@@ -92,7 +92,6 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 | ID | Terms | Check | Scope | Comment |
 | ---| ----- | ----- | ----- | ------- |
 | LIKELINESS_COORDINATES_ZEROZERO | `decimalLatitude`, `decimalLongitude` | Do not exactly match 0,0 | record | |
-| LIKELINESS_COORDINATES_COUNTRY_CENTROID | `decimalLatitude`, `decimalLongitude`, `countryCode` | Do not exactly match the centroid of the country | record | Maybe we should tolerate it if `uncertaintyInMeter` is provided |
 | LIKELINESS_COORDINATES_DIGIT_DISTRIBUTION | `decimalLatitude`, `decimalLongitude` | The decimal part in the range `0.0-0.6` is not overrepresented | dataset | Symptom of incorrect conversion from a DMS coordinates |
  
 ### 4.2 Suspicious Dates
@@ -116,6 +115,12 @@ Agreement/accordance with characteristics previously shown or stated. Absence of
 ## 6. Resolution/precision
 
 The precision dimension is not easy to define and can be easily confused with the more formal definition of [precision](https://en.wikipedia.org/wiki/Accuracy_and_precision): how close repeated measured values are to each other. While this description is correct to express GPS related precision, it is not totally clear when it comes to express the number of digits used to store or export the data. This is the reason we should borrow the word used in the GIS world "resolution" with a simple definition: level or quantity of details provided.
+
+### 6.1 Coordinates resolution
+
+| ID | Terms | Check | Scope | Comment |
+| ---| ----- | ----- | ----- | ------- |
+| RESOLUTION_COORDINATES_COUNTRY_CENTROID | `decimalLatitude`, `decimalLongitude`, `countryCode` | Do not exactly match the centroid of the country | record | Maybe we should tolerate it if `uncertaintyInMeter` is provided |
 
 ### Geographical resolution
 
