@@ -25,7 +25,7 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 * It is not equal to one of the predefined placeholders (e.g. `NULL`, `N/A`)
 
 | ID | Terms | Comments |
-| -- | ------------- | ------------- |
+| -- | ----- | -------- |
 | COMPLETION_OCCURRENCE_ID | `occurrenceID` |  |
 | COMPLETION_OCCURRENCE_EVENT_DATE | `eventDate` or `year`, `month`, `day` |  |
 
@@ -36,7 +36,7 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 *Uniqueness* defines if a value is used only once in a predefined scope. It normally implies *Value completion*. This dimension could be expended to an entire record to flag duplicated records.
 
 | ID | Terms | Context | Scope |
-| -- | ------------- | ------------- |------------- |
+| -- | ----- | ------- |------ |
 | UNIQUENESS_OCCURRENCE_ID | `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
 | UNIQUENESS_TAXON_ID | `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
 
