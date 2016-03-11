@@ -24,10 +24,10 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 * It is not empty (contains at least one printable character)
 * It is not equal to one of the predefined placeholders (e.g. `NULL`, `N/A`)
 
-| Terms | Comments |
-| ------------- | ------------- |
-| [occurrenceID](http://rs.tdwg.org/dwc/terms/occurrenceID) |  |
-| [eventDate](http://rs.tdwg.org/dwc/terms/eventDate) or [year](http://rs.tdwg.org/dwc/terms/year),[month](http://rs.tdwg.org/dwc/terms/month), [day](http://rs.tdwg.org/dwc/terms/day) |  |
+| ID | Terms | Comments |
+| -- | ------------- | ------------- |
+| COMPLETION_OCCURRENCE_ID | `occurrenceID` |  |
+| COMPLETION_OCCURRENCE_EVENT_DATE | `eventDate` or `year`, `month`, `day` |  |
 
 ## 2. Integrity
 
@@ -35,10 +35,10 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 *Uniqueness* defines if a value is used only once in a predefined scope. It normally implies *Value completion*. This dimension could be expended to an entire record to flag duplicated records.
 
-| Terms | Context | Scope |
-| ------------- | ------------- |------------- |
-| `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
-| `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
+| ID | Terms | Context | Scope |
+| -- | ------------- | ------------- |------------- |
+| UNIQUENESS_OCCURRENCE_ID | `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
+| UNIQUENESS_TAXON_ID | `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
 
 ### 2.2 Referential integrity
 
