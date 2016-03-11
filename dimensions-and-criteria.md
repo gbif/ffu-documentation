@@ -87,13 +87,14 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ## 4. Likeliness
 
-*Likeliness** defines the bounds within which the values should be considered "possible".
+*Likeliness* defines the bounds within which the values should be considered "possible".
 
 ### 4.1 Suspicious Coordinates 
 
-Checks the `decimalLatitude`, `decimalLongitude` to ensure they do not match exactly one of the following values:
- * 0,0
- * The centroid of the country represented by `country` or `countryCode`.
+| Information element | Comments |
+| ------------- | ------------- |
+| `decimalLatitude`, `decimalLongitude` | Do not exactly match 0,0 |
+| `decimalLatitude`, `decimalLongitude`, `countryCode` | Do not exactly match the centroid of the country |
  
 ### 4.2 Suspicious Dates
 * Check that `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate`
