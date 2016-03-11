@@ -37,8 +37,8 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 | ID | Terms | Context | Scope |
 | --- | ----- | ------- |------ |
-| UNIQUENESS_OCCURRENCE_ID | `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
-| UNIQUENESS_TAXON_ID | `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
+| INTEGRITY_UNIQUENESS_OCCURRENCE_ID | `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
+| INTEGRITY_UNIQUENESS_TAXON_ID | `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
 
 ### 2.2 Referential integrity
 
@@ -50,19 +50,19 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 *Controlled vocabulary* defines if a value is present in a list of predefined acceptable values. The options to handle empty/missing values and case-sensitivity is up to the implementation.
  
-| Terms | Comments |
-| ------------- | ------------- |
-| [basisOfRecord](http://rs.tdwg.org/dwc/terms/basisOfRecord) |  |
+| ID | Terms | Comments |
+| ---|------ | -------- |
+| INTEGRITY_CTRL_VOCAB_BASIS_OF_RECORD | [basisOfRecord](http://rs.tdwg.org/dwc/terms/basisOfRecord) |  |
 
 
 ### 2.4 Minimum/maximum
 
 *Minimum/maximum* defines that the value of a minimum term must be smaller or equal to the value of a maximum term.
 
-| Terms | Comments |
-| ------------- | ------------- |
-| `minimumDepthInMeters`, `maximumDepthInMeters` |  |
-| `minimumElevationInMeters`, `maximumElevationInMeters` |  |
+| ID | Terms | Comments |
+| ---|------ | -------- |
+| INTEGRITY_MIN_MAX_DEPTH |`minimumDepthInMeters`, `maximumDepthInMeters` |  |
+| INTEGRITY_MIN_MAX_ELEVATION |`minimumElevationInMeters`, `maximumElevationInMeters` |  |
 
 ## 3. Conformity
 
