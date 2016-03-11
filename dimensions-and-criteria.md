@@ -25,7 +25,7 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 * It is not equal to one of the predefined placeholders (e.g. `NULL`, `N/A`)
 
 | ID | Terms | Comments |
-| -- | ----- | -------- |
+| --- | ----- | -------- |
 | COMPLETION_OCCURRENCE_ID | `occurrenceID` |  |
 | COMPLETION_OCCURRENCE_EVENT_DATE | `eventDate` or `year`, `month`, `day` |  |
 
