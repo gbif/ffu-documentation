@@ -87,16 +87,17 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 *Likeliness* defines the bounds within which the values should be considered "possible".
 
-### 4.1 Suspicious Coordinates 
+### 4.1 Coordinates 
 
 | ID | Terms | Check | Scope | Comment |
 | ---| ----- | ----- | ----- | ------- |
 | LIKELINESS_COORDINATES_ZEROZERO | `decimalLatitude`, `decimalLongitude` | Do not exactly match 0,0 | record | |
+| LIKELINESS_COORDINATES_BOUNDS | `decimalLatitude`, `decimalLongitude` | [-90, 90] and [-180, 180] | record | |
 | LIKELINESS_COORDINATES_DIGIT_DISTRIBUTION | `decimalLatitude`, `decimalLongitude` | The decimal part in the range `0.0-0.6` is not overrepresented | dataset | Symptom of incorrect conversion from a DMS coordinates |
  
-### 4.2 Suspicious Dates
+### 4.2 Dates
 | ID | Terms | Check |
-| ---|------------- | ------------- |
+| ---|------ | ----- |
 | LIKELINESS_DATES_EVENT_SEQUENCE |`eventDate`,`year`,`month`,`day`,`dateIdentified`,`dcterms:modified`,`georeferencedDate` | `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate` |
 | LIKELINESS_DATES_EVENT |`eventDate`, `dateIdentified` | Are after 1600 and before the current date |
 | LIKELINESS_DATES_COMPUTER |`dcterms:modified` | Is after 1970 and before the current date |
