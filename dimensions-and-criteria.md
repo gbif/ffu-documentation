@@ -37,8 +37,8 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 | Terms | Context | Scope |
 | ------------- | ------------- |------------- |
-| `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) dataset |
-| `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) dataset |
+| `occurrenceID` | [Occurrence](http://rs.tdwg.org/dwc/terms/Occurrence) | dataset |
+| `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) | dataset |
 
 ### 2.2 Referential integrity
 
