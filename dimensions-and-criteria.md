@@ -89,18 +89,18 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ### 4.1 Suspicious Coordinates 
 
-| Terms | Check | Comment |
-| ----- | ----- | ------- |
-| `decimalLatitude`, `decimalLongitude` | Do not exactly match 0,0 | |
-| `decimalLatitude`, `decimalLongitude`, `countryCode` | Do not exactly match the centroid of the country | |
-| `decimalLatitude`, `decimalLongitude` | The decimal part in the range `0.0-0.6` is not overrepresented | Symptom of incorrect conversion from a DMS coordinates |
+| ID | Terms | Check | Comment |
+| ---| ----- | ----- | ------- |
+| LIKELINESS_COORDINATES_ZEROZERO | `decimalLatitude`, `decimalLongitude` | Do not exactly match 0,0 | |
+| LIKELINESS_COORDINATES_COUNTRY_CENTROID | `decimalLatitude`, `decimalLongitude`, `countryCode` | Do not exactly match the centroid of the country | Maybe we should tolerate it if `uncertaintyInMeter` is provided |
+| | `decimalLatitude`, `decimalLongitude` | The decimal part in the range `0.0-0.6` is not overrepresented | Symptom of incorrect conversion from a DMS coordinates |
  
 ### 4.2 Suspicious Dates
-| Terms | Check |
-| ------------- | ------------- |
-| `eventDate`,`year`,`month`,`day`,`dateIdentified`,`dcterms:modified`,`georeferencedDate` | `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate` |
-| `eventDate`, `dateIdentified` | Are after 1600 |
-| `dcterms:modified` | Is after 1970 |
+| ID | Terms | Check |
+| ---|------------- | ------------- |
+| LIKELINESS_DATES_EVENT_SEQUENCE |`eventDate`,`year`,`month`,`day`,`dateIdentified`,`dcterms:modified`,`georeferencedDate` | `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate` |
+| LIKELINESS_DATES_EVENT |`eventDate`, `dateIdentified` | Are after 1600 and before the current date |
+| LIKELINESS_DATES_COMPUTER |`dcterms:modified` | Is after 1970 and before the current date |
 
 ## 5. Consistency
 
