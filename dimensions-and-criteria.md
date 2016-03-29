@@ -28,6 +28,7 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 | --- | ----- | -------- |
 | COMPLETION_OCCURRENCE_ID | `occurrenceID` |  |
 | COMPLETION_OCCURRENCE_EVENT_DATE | `eventDate` or `year`, `month`, `day` |  |
+| COMPLETION_BASIS_OF_RECORD | `dwc:basisOfRecord` |  |
 
 ## 2. Integrity
 
@@ -48,11 +49,11 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ### 2.3 Controlled vocabulary
 
-*Controlled vocabulary* defines if a value is present in a list of predefined acceptable values. The options to handle empty/missing values and case-sensitivity is up to the implementation.
+*Controlled vocabulary* defines whether a value is present in a list of predefined acceptable values.  Missing values should be treated as a separate Completeness test.  Case-sensitivity is up to the definition in the vocabulary, which will generally be case sensitive.  Support for fully qualified term names (e.g. http://rs.tdwg.org/dwc/terms/PreservedSpecimen) or short names (e.g. PreservedSpecimen) MAY BE left to the implementation.
  
 | ID | Terms | Comments |
 | ---|------ | -------- |
-| INTEGRITY_CTRL_VOCAB_BASIS_OF_RECORD | [basisOfRecord](http://rs.tdwg.org/dwc/terms/basisOfRecord) |  |
+| INTEGRITY_CTRL_VOCAB_BASIS_OF_RECORD | [basisOfRecord](http://rs.tdwg.org/dwc/terms/basisOfRecord) | Terms in the old [Darwin Core Type Vocabulary](http://rs.gbif.org/vocabulary/dwc/basis_of_record.xml) are in widespread use, and the string constants (e.g. PreservedSpecimen) therein are appropriate, though the namespace has changed. See: Darwin Core documentation [Decision-2009-12-07_2](http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2009-12-07_2) and [Decision-2014-10-26_15](http://rs.tdwg.org/dwc/terms/history/decisions/#Decision-2014-10-26_15) |
 
 
 ### 2.4 Minimum/maximum
