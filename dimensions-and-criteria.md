@@ -43,9 +43,9 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ### 2.2 Referential integrity
 
-| Terms | Reference | Scope |
-| ------------- | ------------- |------------- |
-| `parentNameUsageID` | `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) dataset |
+| Terms | Reference | Scope | Comment |
+| ----_ | --------- | ----- | ------- |
+| `parentNameUsageID` | `taxonID` | [Taxon](http://rs.tdwg.org/dwc/terms/Taxon) dataset | Note, this would not be expected to hold if dwc:taxonID was an identifier specific to the dataset, and the ...NameUsageID values were external identifiers. |
 
 ### 2.3 Controlled vocabulary
 
