@@ -71,7 +71,6 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 | ID | Terms | Comments |
 | ---|---------- | ------------- |
-| CONFORMITY_DATATYPE_EVENT_DATE | `eventDate` | date, including partial date and date range |
 | CONFORMITY_DATATYPE_YEAR | `year` | integer |
 | CONFORMITY_DATATYPE_MONTH | `month` | integer  |
 | CONFORMITY_DATATYPE_DAY | `day` | integer |
@@ -82,7 +81,9 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 
 ### Data format
 
-?
+| ID | Terms | Comments |
+| ---|---------- | ------------- |
+| CONFORMITY_DATAFORMAT_EVENT_DATE | `dwc:eventDate` | Format conforms to recommended best practice "Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)." See: [ISO date](https://en.wikipedia.org/wiki/Iso_date), this can include partial date and date range. |
 
 ## 4. Likeliness
 
@@ -97,11 +98,11 @@ This page lists dimensions and criteria that could eventually be (re)used to cre
 | LIKELINESS_COORDINATES_DIGIT_DISTRIBUTION | `decimalLatitude`, `decimalLongitude` | The decimal part in the range `0.0-0.6` is not overrepresented | dataset | Symptom of incorrect conversion from a DMS coordinates |
  
 ### 4.2 Dates
-| ID | Terms | Check |
-| ---|------ | ----- |
-| LIKELINESS_DATES_EVENT_SEQUENCE |`eventDate`,`year`,`month`,`day`,`dateIdentified`,`dcterms:modified`,`georeferencedDate` | `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate` |
-| LIKELINESS_DATES_EVENT |`eventDate`, `dateIdentified` | Are after 1600 and before the current date |
-| LIKELINESS_DATES_COMPUTER |`dcterms:modified` | Is after 1970 and before the current date |
+| ID | Terms | Check | Comment |
+| ---|------ | ----- | ------- |
+| LIKELINESS_DATES_EVENT_SEQUENCE |`eventDate`,`year`,`month`,`day`,`dateIdentified`,`dcterms:modified`,`georeferencedDate` | `eventDate` or `year`,`month`,`day` is before `dateIdentified`, `dcterms:modified`, `georeferencedDate` | Assuming the eventDate, year, month and day are properties of a dwc:Occurrence and are thus the date recorded. |
+| LIKELINESS_DATES_EVENT |`eventDate`, `dateIdentified` | Are after 1600 and before the current date | Assuming the eventDate is a property of a dwc:Occurrence and is thus the date recorded. |
+| LIKELINESS_DATES_COMPUTER |`dcterms:modified` | Is after 1970 and before the current date | Assumes that the resource is electronic.  |
 
 ## 5. Consistency
 
@@ -111,7 +112,7 @@ Agreement/accordance with characteristics previously shown or stated. Absence of
 
 | ID | Terms | Comments |
 | ---|------------- | ------------- |
-| CONCISTENCY_EVENT_DATE | [eventDate](http://rs.tdwg.org/dwc/terms/eventDate), [year](http://rs.tdwg.org/dwc/terms/year), [month](http://rs.tdwg.org/dwc/terms/month), [day](http://rs.tdwg.org/dwc/terms/day) |  |
+| CONCISTENCY_EVENT_DATE | [eventDate](http://rs.tdwg.org/dwc/terms/eventDate), [year](http://rs.tdwg.org/dwc/terms/year), [month](http://rs.tdwg.org/dwc/terms/month), [day](http://rs.tdwg.org/dwc/terms/day) |  dwc:eventDate may represent a range, values of dwc:year dwc:month, and dwc:day are not defined in this case. |
 | CONCISTENCY_LOCATION| [countryCode](http://rs.tdwg.org/dwc/terms/countryCode), [decimalLongitude](http://rs.tdwg.org/dwc/terms/decimalLongitude), [decimalLatitude](http://rs.tdwg.org/dwc/terms/decimalLatitude) |  |
 
 ## 6. Resolution/precision
